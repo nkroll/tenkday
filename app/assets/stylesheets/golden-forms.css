@@ -508,8 +508,8 @@ text | tel | number | url | search | password
 }
 
 .golden-forms .invalid > .input:focus  {
-	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.15), 0 0 8px rgba(228,70,52,0,.7);
-  	-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.15), 0 0 8px rgba(228,70,52,0,.7);
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.15), 0 0 8px rgba(228,70,52,.7);
+  	-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.15), 0 0 8px rgba(228,70,52,.7);
   	box-shadow: inset 0 1px 1px rgba(0,0,0,.15), 0 0 8px rgba(228,70,52,.7);
 }
 
