@@ -1,7 +1,7 @@
 <!-- NEWSLETTER SIGNUP -->
 <div class="newsletter-wrapper">
 <div class="newsletter">
-
+	Enter Your Birthday:<br><br>
 	<form id="newsletter-signup" name="newsletter-signup" action="/results" method="get">
 		
 		<%= select_month(@dob || Date.today, field_name: 'dob_month', class: "dobselect", id: "dobselectm") %>
@@ -9,7 +9,7 @@
 		<%= select_year(@dob || Date.today - 27.years, field_name: 'dob_year', class: "dobselect", id: "dobselecty", start_year: 1900, end_year: Date.today.year) %>
 		<br>
 		<br>
-		<input type="submit" name="submit" id="submit" class="subscribe" value="Tomorrowland!" />
+		<input type="submit" name="submit" id="submit" class="subscribe" style="width:120px;" value="+10,000" />
 	</form>
 </div>
 </div>
