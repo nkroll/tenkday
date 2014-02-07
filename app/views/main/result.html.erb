@@ -1,0 +1,50 @@
+	<!-- COUNTDOWN ELEMENTS -->
+	<div class="second-energy-level">
+		<div class="electron-container-one"><div class="electron"></div></div>
+		<div class="first-energy-level">
+			<div class="electron-container-two"><div class="electron"></div></div>
+			<div class="electron-container-three"><div class="electron"></div></div>
+			<div class="counter"><h2 class="days"><%= @tenk.strftime("%b") %></h2><p class="time_Days">Month</p></div>
+		</div>
+	</div>
+	<div class="second-energy-level">
+		<div class="electron-container-one"><div class="electron"></div></div>
+		<div class="first-energy-level">
+			<div class="electron-container-two"><div class="electron"></div></div>
+			<div class="electron-container-three"><div class="electron"></div></div>
+			<div class="counter"><h2 class="hours"><%= @tenk.strftime("%e") %></h2><p class="time_Hours">Date</p></div>
+		</div>
+	</div>
+	<div class="second-energy-level">
+		<div class="electron-container-one"><div class="electron"></div></div>
+		<div class="first-energy-level">
+			<div class="electron-container-two"><div class="electron"></div></div>
+			<div class="electron-container-three"><div class="electron"></div></div>
+			<div class="counter"><h2 class="minutes"><%= @tenk.strftime("%Y") %></h2><p class="time_Minutes">Year</p></div>
+		</div>
+	</div>
+	<div class="second-energy-level">
+		<div class="electron-container-one"><div class="electron"></div></div>
+		<div class="first-energy-level">
+			<div class="electron-container-two"><div class="electron"></div></div>
+			<div class="electron-container-three"><div class="electron"></div></div>
+			<div class="counter"><h2 class="seconds"><%= @dob.strftime("%a") %></h2><p class="time_Seconds">Day</p></div>
+		</div>
+	</div>
+</div>
+
+	<!-- NEWSLETTER SIGNUP -->
+	<div class="newsletter-wrapper">
+	<div class="newsletter">
+	
+		<form id="newsletter-signup" name="newsletter-signup" action="/results" method="get">
+			
+			<%= select_month(@dob || Date.today, field_name: 'dob_month', class: "dobselect", id: "dobselectm") %>
+			<%= select_day(@dob || Date.today, field_name: 'dob_day', class: "dobselect", id: "dobselectd") %>
+			<%= select_year(@dob || Date.today - 27.years, field_name: 'dob_year', class: "dobselect", id: "dobselecty", start_year: 1900, end_year: Date.today.year) %>
+			<br>
+			<br>
+			<input type="submit" name="submit" id="submit" class="subscribe" value="Enter!" />
+		</form>
+	</div>
+	</div>
