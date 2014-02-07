@@ -118,6 +118,15 @@ a {
 	-moz-box-sizing: border-box;
 }
 
+.page_titel {
+	background-color: #2c3e50; 
+	color: #fff;
+	border: 3px solid #16a085;
+	max-width:960px;
+	margin:0 auto;
+	border-radius: 10px;"
+}
+
 .counter p {
 	font-size: 12px !important;
 	position: relative;
@@ -184,6 +193,8 @@ a {
 	padding: 10px;
 	display: inline-block;
 	margin: 60px 0 0 0;
+	border: 3px solid #16a085;
+	
 }
 
 
